@@ -1,16 +1,8 @@
 # Run docker without desktop on mac
 
 ## Usage 
-### Proxy setup (if necessary)
-Create `.vagrant/secret.yaml` file within this folder the following content to authenticate against the proxy.
 
-**Replace the values in brackets with your proxy values**
-
-```yaml
-# file: .vagrant/secret.yaml
-proxy: "http://<proxy-user>:<proxy-pass>@<proxy-url>:<proxy-port>"
-```
-
+### 
 Run the following command to install all dependecies locally and bring up a virtual machine providing the docker-daemon via tcp port on `localhost:2375`.
 This will also add an entry to `~/.bash_profile` to ensure `DOCKER_HOST` variable is properly set. 
 
@@ -52,4 +44,14 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
+```
+
+### Proxy setup (if necessary)
+Create `.vagrant/secret.yaml` file within this folder the following content to authenticate against the proxy.
+
+**Replace the values in brackets with your proxy values**
+
+```yaml
+# file: .vagrant/secret.yaml
+proxy: "http://<proxy-user>:<proxy-pass>@<proxy-url>:<proxy-port>"
 ```
